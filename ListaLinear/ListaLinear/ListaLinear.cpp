@@ -105,5 +105,19 @@ void inserirElemento()
 // deve ser implementada como resposta ao exercicio
 void buscarElemento()
 {
-
-}
+	bool aux = true;
+	int num;
+	cout <<"Digite um valor a ser buscado"<<endl;
+	cin >> num;
+	for (int n = 0; n < nElementos; n++) {
+		
+		if (lista[n] == num) {
+			cout << "Posicao: " << n << endl;
+			aux = false;
+		}
+	}
+	if (aux == true) {
+		cout << "Elemento não encontrado.\n";
+	}
+}	
+	
